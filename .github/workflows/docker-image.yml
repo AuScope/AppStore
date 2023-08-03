@@ -2,45 +2,26 @@ name: Docker Image CI
 
 on:
   # Manually triggered
-  workflow_dispatch:
+  push:
+    branches:
+      - main
 env:
-  REGISTRY: ghcr.io
-  IMAGE_NAME: ghcr.io/auscope/appstore/app
+
   AWS_REGION: ap-southeast-2 # set this to your preferred AWS region, e.g. us-west-1
   ECR_REPOSITORY: appstore # set this to your Amazon ECR repository name
-  ECS_SERVICE: appstore # set this to your Amazon ECS service name
-  ECS_CLUSTER: avre # set this to your Amazon ECS cluster name
-  ECS_TASK_DEFINITION: ../appstore-revision1.json # set this to the path to your Amazon ECS task definition
+  ECS_SERVICE: avre_appstore # set this to your Amazon ECS service name
+  ECS_CLUSTER: auscope1 # set this to your Amazon ECS cluster name
+  ECS_TASK_DEFINITION: ./ecs/appstore-revision1.json # set this to the path to your Amazon ECS task definition
     # file, e.g. .aws/task-definition.json
   CONTAINER_NAME: appstore # set this to the name of the container in the
     # containerDefinitions section of your task definition
 jobs:  
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
 
+    env:
+      ACTIONS_RUNNER_DEBUG: true  # Enable debug mode
     steps:
-    - name: Get current date
-      id: date
-      uses: Kaven-Universe/github-action-current-date-time@v1.2.0
-      with:
-        format: "YYYY-MM-DD_HH_mm_ss"  
-    - name: Checkout repository
-      uses: actions/checkout@v3
-    - name: Build the Docker image
-      run: cd ui && docker build . --tag $IMAGE_NAME:${{ steps.date.outputs.time }} --file docker/Dockerfile 
-
-    - name: Log in to the Container registry
-      uses: docker/login-action@65b78e6e13532edd9afa3aa52ac7964289d1a9c1
-      with:
-        registry: ${{ env.REGISTRY }}
-        username: ${{ github.actor }}
-        password: ${{ secrets.GITHUB_TOKEN }}
-    - name: Push image
-      run: docker push $IMAGE_NAME:${{ steps.date.outputs.time }}
-      
     - name: Checkout
       uses: actions/checkout@v3
 
