@@ -15,7 +15,16 @@
     color: rgb(242, 242, 241);
 }
 
-
 .icon-img {
     max-width: 60px; max-height: 60px;
+}
+
+.provider-info-row {
+    min-height: 100px;
+    display: flex;
+    width: 100%;
+}
+
+.provider-selection-row {
+    display: contents;
 }

@@ -6,8 +6,7 @@
 @import "responsive";
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
 
-/* Card colour */
-.bg-all {
+html {
    background-color: rgb(242, 242, 241);
 }
 
@@ -18,7 +17,11 @@
 }
 
 app-provider-card {
+   display: block;
    margin: 10px;
+   padding: 10px;
+   border-radius: 0.6em;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Card title styling */
