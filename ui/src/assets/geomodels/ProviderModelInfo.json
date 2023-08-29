@@ -94,14 +94,6 @@
                         "srcUrl" : "http://sensi.geoanalytics.group/",
                         "infoUrl": "",
                         "infoMessage": "Seismic Network Design App for optimising seismic array design that is based on the analytical method called SENSI that has been developed by Tramelli et al. (2013), which is widely used around the world including the GipNet array deployed to monitor seismicity in the Gippsland region in Victoria, Australia."
-                    },
-                    {
-                        "name": "iEarth Software",
-                        "icon": "iEarth-logo.png",
-                        "colourClass": "all",
-                        "srcUrl" : "http://www.iearth.edu.au/codes/",
-                        "infoUrl": "http://www.iearth.edu.au/",
-                        "infoMessage": "The AuScope inversion laboratory (2011-2014) (ilab) is a project to make advanced inference and data analysis software available to the geophysics community. Many of the codes have been developed specifically for iLab, with others contributed by the authors. Software provided here has been possible with development support from the AuScope-AGOS (2011-2014). The AuScope Inversion Laboratory is a component of the Australian Geophysical Observing system (AuScope-AGOS) funded through the Australian Federal Government’s Education Infrastructure Fund (EIF3)."
                     }
                 ],
                 "icon": "Icons_Earth Imaging.png",
@@ -110,41 +102,42 @@
                 "infoMessage": "AuScope-sponsored Seismic Applications"
             },
             "3dmodels": {
-                "name": "3d Geological Models",
+                "name": "3d Geoscience Models",
                 "models": [
                     {
-                        "name": "AuScope 3d Geological Model Portal",
+                        "name": "AuScope 3d Geoscience Model Portal",
                         "icon": "3d-Geo-Models.jpg",
                         "colourClass": "all",
                         "srcUrl" : "http://geomodels.auscope.org.au/",
                         "infoUrl": "",
-                        "infoMessage": "This website enables you to explore a wide range of geological models from all around Australia in 3D. The models are supported by links to other informative sources, namely AuScope Portal, Geoscience Australia, and the state and territory geological surveys' websites."
+                        "infoMessage": "This website enables you to explore a wide range of geoscience models from all around Australia in 3D. The models are supported by links to other informative sources, namely AuScope Portal, geoscience Australia, and the state and territory geoscience surveys' websites."
                     }
                 ],
                 "icon": "Icons_AVRE.png",
                 "colourClass": "all",
                 "infoUrl": "https://www.auscope.org.au/avre",
-                "infoMessage": "AVRE's application for viewing geological models in 3D"
+                "infoMessage": "AVRE's application for viewing geoscience models in 3D"
             },
             "geophys": {
                 "name": "Geophysics",
                 "models": [
                     {
-                        "name": "Virtual Geophysics Lab",
-                        "icon": "VGL2.jpg",
-                        "colourClass": "all",
-                        "srcUrl" : "https://vgl.auscope.org/",
-                        "infoUrl": "https://www.auscope.org.au/avre",
-                        "infoMessage": "The Virtual Geophysics Laboratory (VGL) is a scientific workflow portal that provides Geophysicists with access to an integrated environment that exploits eResearch tools and Cloud computing technology."
-                    },
-                    {
                         "name": "Geophysics HPC",
-                        "icon": "MT-Training-NCI.jpg",
+                        "icon": "MT-Training-NCI.png",
                         "colourClass": "all",
-                        "srcUrl" : "https://opus.nci.org.au/x/bwC_Bg",
+                        "srcUrl" : "https://opus.nci.org.au/display/DAE/Geophysics",
                         "infoUrl": "https://nci.org.au/",
                         "infoMessage": "The Geophysics community space contains documentation and tutorials on how to access geophysical datasets at NCI as well as the various processing and inversion tools available on NCI’s Virtual Desktop Infrastructure (VDI) and Gadi Supercomputer."
-                    },
+                    }
+                ],
+                "icon": "NCI-logo.svg",
+                "colourClass": "all",
+                "infoUrl": "https://nci.org.au/",
+                "infoMessage": "Geophysics applications from AuScope AVRE, NCI and the geophysics community"
+            },
+            "iEarth": {
+                "name": "AuScope Inversion Laboratory",
+                "models": [
                     {
                         "name": "iEarth Software",
                         "icon": "iEarth-logo.png",
@@ -154,9 +147,26 @@
                         "infoMessage": "The AuScope inversion laboratory (2011-2014) (ilab) is a project to make advanced inference and data analysis software available to the geophysics community. Many of the codes have been developed specifically for iLab, with others contributed by the authors. Software provided here has been possible with development support from the AuScope-AGOS (2011-2014). The AuScope Inversion Laboratory is a component of the Australian Geophysical Observing system (AuScope-AGOS) funded through the Australian Federal Government’s Education Infrastructure Fund (EIF3)."
                     }
                 ],
-                "icon": "NCI-logo.svg",
+                "icon": "iEarth-logo.png",
                 "colourClass": "all",
-                "infoUrl": "https://nci.org.au/",
-                "infoMessage": "Geophysics applications from AuScope AVRE, NCI and the geophysics community"
+                "infoUrl": "http://www.iearth.edu.au/",
+                "infoMessage": "iEarth is a collaborative group comprising scientists from academia, government, and industry"
+            },
+            "vgl": {
+                "name": "Virtual Geophysics Laboratory",
+                "models": [
+                    {
+                        "name": "Virtual Geophysics Lab",
+                        "icon": "VGL2.jpg",
+                        "colourClass": "all",
+                        "srcUrl" : "https://vgl.auscope.org/",
+                        "infoUrl": "https://www.auscope.org.au/avre",
+                        "infoMessage": "The Virtual Geophysics Laboratory (VGL) is a scientific workflow portal that provides Geophysicists with access to an integrated environment that exploits eResearch tools and Cloud computing technology."
+                    }
+                ],
+                "icon": "VGL2.jpg",
+                "colourClass": "all",
+                "infoUrl": "https://www.auscope.org.au/avre",
+                "infoMessage": "VGL is a portal for geophysicists to access integrated eResearch tools and Cloud computing."
             }
 }
