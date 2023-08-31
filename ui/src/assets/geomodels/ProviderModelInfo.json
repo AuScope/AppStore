@@ -16,23 +16,6 @@
                 "infoUrl": "https://www.auscope.org.au/sam",
                 "infoMessage": "Applications from AuScope's Simulation, Analysis & Modelling program (SAM)"
             },
-            "igsn": {
-                "name": "IGSN",
-                "models": [
-                    {
-                        "name": "ARDC IGSN Minting Service",
-                        "icon": "IGSN-ARDC.jpg",
-                        "colourClass": "all",
-                        "srcUrl" : "http://www.auscope.org.au/igsn-info/",
-                        "infoUrl": "",
-                        "infoMessage": "This service enables users to mint and assign International Geo Sample Numbers (IGSN) identifiers. The IGSN is a resolvable identifier for physical samples from our natural environment and related sampling features associated with research."
-                    }
-                ],
-                "icon": "igsn-original.jpg",
-                "colourClass": "all",
-                "infoUrl": "https://www.igsn.org/",
-                "infoMessage": "IGSN Sample Minting applications"
-            },
             "portal": {
                 "name": "AuScope Portal",
                 "models": [
