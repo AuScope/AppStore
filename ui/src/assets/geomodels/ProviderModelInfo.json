@@ -151,5 +151,22 @@
                 "colourClass": "all",
                 "infoUrl": "https://www.auscope.org.au/avre",
                 "infoMessage": "VGL is a portal for geophysicists to access integrated eResearch tools and Cloud computing."
+            },
+            "mate": {
+                "name": "Model Atlas of the Earth",
+                "models": [
+                    {
+                        "name": "Model Atlas of the Earth",
+                        "icon": "mate-info.jpg",
+                        "colourClass": "all",
+                        "srcUrl" : "https://mate.science/",
+                        "infoUrl": "https://mate.science/models/",
+                        "infoMessage": "M@TE is an open-source collection of computational models with a focus on tectonics, hydrogeology and surface processes. M@TE provides a range of digital infrastructure to support the FAIR principles: Findability, Accessibility, Interoperability and Reusability."
+                    }
+                ],
+                "icon": "mate.svg",
+                "colourClass": "all",
+                "infoUrl": "https://mate.science/news/",
+                "infoMessage": "M@TE is an open-source collection of computational models with a focus on tectonics, hydrogeology and surface processes."
             }
 }
