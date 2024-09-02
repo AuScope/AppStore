@@ -6,7 +6,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { HttpErrorResponse } from '@angular/common/http';
-import { Observable ,  Subject } from 'rxjs';
+import { Subject } from 'rxjs';
 
 
 export interface ProviderInfo {
@@ -17,6 +17,7 @@ export interface ProviderInfo {
     providerPath: string;
     infoUrl: string;
     infoMessage: string;
+    models: any;
 }
 
 export const FIXED_HEIGHT = -1.0;
@@ -96,14 +97,16 @@ export class ModelInfoService {
                         local.providerInfoList = [];
                         for (const providerKey in local.providerModelInfo) {
                             if (local.providerModelInfo.hasOwnProperty(providerKey)) {
-                                const providerInfo: ProviderInfo = { name: local.providerModelInfo[providerKey].name,
-                                                                 numberModels: local.providerModelInfo[providerKey].models.length,
-                                                                 icon: local.providerModelInfo[providerKey].icon,
-                                                                 colourClass: local.providerModelInfo[providerKey].colourClass,
-                                                                 providerPath: providerKey,
-                                                                 infoUrl: local.providerModelInfo[providerKey].infoUrl,
-                                                                 infoMessage: local.providerModelInfo[providerKey].infoMessage
-                                                             };
+                                const providerInfo: ProviderInfo = {
+                                    name: local.providerModelInfo[providerKey].name,
+                                    numberModels: local.providerModelInfo[providerKey].models.length,
+                                    icon: local.providerModelInfo[providerKey].icon,
+                                    colourClass: local.providerModelInfo[providerKey].colourClass,
+                                    providerPath: providerKey,
+                                    infoUrl: local.providerModelInfo[providerKey].infoUrl,
+                                    infoMessage: local.providerModelInfo[providerKey].infoMessage,
+                                    models: local.providerModelInfo[providerKey].models
+                                };
                                 local.providerInfoList.push(providerInfo);
                             }
                         }
@@ -120,7 +123,6 @@ export class ModelInfoService {
         return this.initPromise;
     }
 
-
     /**
      * Builds an HTTP GET URL using parameters
      * @param params parameters Javascript object with key-val pairs
@@ -130,9 +132,6 @@ export class ModelInfoService {
         return Object.keys(params).map(k => encodeURIComponent(k) + '=' + encodeURIComponent(params[k])).join('&');
     }
 
-
-
-
     /**
      * Retrieves the provider model information from the model information
      * @return a promise of the provider model information in JSON format
@@ -140,10 +139,10 @@ export class ModelInfoService {
     public async getProviderModelInfo() {
         const local = this;
         if (this.initialised) {
-            return new Promise(resolve => resolve(local.providerModelInfo));
+            return Promise.resolve(local.providerModelInfo);
         }
         const result = await this.initialise();
-        return new Promise(resolve => resolve(result[0]));
+        return Promise.resolve(result[0]);
     }
 
     /**
@@ -153,10 +152,10 @@ export class ModelInfoService {
     public async getProviderInfo() {
         const local = this;
         if (this.initialised) {
-            return new Promise(resolve => resolve(local.providerInfoList));
+            return Promise.resolve(local.providerInfoList);
         }
         const result = await this.initialise();
-        return new Promise(resolve => resolve(result[1]));
+        return Promise.resolve(result[1]);
     }
 
 }

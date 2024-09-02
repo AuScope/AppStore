@@ -20,6 +20,7 @@ export class ProviderCardComponent {
     @Input() prePath = '';
     @Input() infoLink = '';
     @Input() pInfoMessage: string;
+    @Input() srcUrl: string;
 
     constructor() {
         // If this website sits in a subdirectory of web server's 'document root' directory
@@ -37,6 +38,13 @@ export class ProviderCardComponent {
         if (modelCount > 0) {
             window.location.assign(this.prePath + '/provider/' + this.providerPath);
         }
+    }
+
+    /**
+     * Navigates the browser to a new page to view the chosen model
+     */
+    public navigateToModel() {
+        window.open(this.srcUrl);
     }
 
     /**

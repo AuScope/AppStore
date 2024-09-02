@@ -60,3 +60,15 @@ app-provider-card {
    font-style: normal;
    font-weight: 400;
 }
+
+/* Main button class for provider/model cards, e.g. "Launch" and "Find Out More" */
+.btn-avre {
+   margin: 5px;
+   width: 10rem;
+   min-height: 50px;
+   border-radius: 3px;
+   border-width: 2px;
+   border-style: solid;
+   background-color: transparent;
+   margin-top: 20px;
+}
