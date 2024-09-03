@@ -37,14 +37,6 @@
                 "name": "Geochemistry",
                 "models": [
                     {
-                        "name": "AGN Laboratory Finder",
-                        "icon": "AGN-LabFinder.jpg",
-                        "colourClass": "all",
-                        "srcUrl" : "https://labfinder.geoanalytics.group/",
-                        "infoUrl": "",
-                        "infoMessage": "The AGN Laboratory Finder is designed to identify and understand the analysis techniques available to researchers through the Australian Geochemistry Network. You will find the contact details of our expert staff for each technique. They can provide you with all the information you need and guide you through the planning, training, data collection and interpretation stages of your experiments."
-                    },
-                    {
                         "name": "AusGeoChem",
                         "icon": "AusGeoChem.png",
                         "colourClass": "all",
