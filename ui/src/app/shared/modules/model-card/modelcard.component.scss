@@ -6,19 +6,12 @@
     font-size: 20px;
 }
 
-.btn-light {
-    margin: 5px;
-    width: 10rem;
-    min-height: 50px;
-    border-radius: 3px;
-    border-width: 2px;
-    border-style: solid;
-    background-color: transparent;
-    border-color: #ed5d4a;
-    color: #ed5d4a;
-    margin-top: 20px;
+.btn-model-light {
+    border-color:   #598f39;
+    color:   #598f39;
 }
-.btn-light:hover {
-    background-color: #ed5d4a;
+
+.btn-model-light:hover {
+    background-color:   #598f39;
     color: rgb(242, 242, 241);
 }
