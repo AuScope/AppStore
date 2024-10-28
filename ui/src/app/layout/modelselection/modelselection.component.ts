@@ -25,7 +25,9 @@ export class ModelSelectionComponent implements OnInit {
 
     ngOnInit() {
         this.providerPath = this.route.snapshot.paramMap.get('providerPath');
-        this.modelInfoService.getProviderModelInfo().then(res => { this.providerModels = res; });
+        this.modelInfoService.getProviderModelInfo().then(res => {
+            this.providerModels = res;
+        });
     }
 
 }

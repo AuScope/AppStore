@@ -42,7 +42,9 @@ export class ProviderSelectionComponent {
                 url: 'http://www.iearth.edu.au/codes/'
             }
         );
-        this.modelInfoService.getProviderInfo().then(res => { this.sources = res; });
+        this.modelInfoService.getProviderInfo().then(res => {
+            this.sources = res;
+        });
     }
 
 }

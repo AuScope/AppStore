@@ -5,18 +5,18 @@ export function routerTransition() {
 }
 
 export function slide(enterTransforms: [string, string], leaveTransforms: [string, string]) {
-  return trigger('routerTransition', [
-      state('void', style({})),
-      state('*', style({})),
-      transition(':enter', [
-          style({ transform: enterTransforms[0] }),
-          animate('0.5s ease-in-out', style({ transform: enterTransforms[1] }))
-      ]),
-      transition(':leave', [
-          style({ transform: leaveTransforms[0] }),
-          animate('0.5s ease-in-out', style({ transform: leaveTransforms[1] }))
-      ])
-  ]);
+    return trigger('routerTransition', [
+        state('void', style({})),
+        state('*', style({})),
+        transition(':enter', [
+            style({ transform: enterTransforms[0] }),
+            animate('0.5s ease-in-out', style({ transform: enterTransforms[1] }))
+        ]),
+        transition(':leave', [
+            style({ transform: leaveTransforms[0] }),
+            animate('0.5s ease-in-out', style({ transform: leaveTransforms[1] }))
+        ])
+    ]);
 }
 
 export function slideToRight() {

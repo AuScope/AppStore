@@ -33,11 +33,11 @@ export function createTranslateLoader(http: HttpClient) {
         // Used when the website is installed in a subdirectory of web server's 'document root'
         // It lets the Angular router know that the base directory of website is a subdirectory of 'document root'
         { provide: APP_BASE_HREF, useFactory: () => {
-                if (environment.usePrePath) {
-                    return environment.prePath;
-                }
-                return '';
-            } },
+            if (environment.usePrePath) {
+                return environment.prePath;
+            }
+            return '';
+        } },
         provideHttpClient(withInterceptorsFromDi())
     ] })
 export class AppModule {}
