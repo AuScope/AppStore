@@ -25,13 +25,13 @@
                         "colourClass": "all",
                         "srcUrl" : "http://portal.auscope.org.au/",
                         "infoUrl": "",
-                        "infoMessage": "A Web Based Interface for searching and accessing a vast treasure trove of data, information, imagery, services and applications."
+                        "infoMessage": "A web-based interface for searching and accessing a vast treasure trove of data, information, imagery, services and applications."
                     }
                 ],
                 "icon": "Icons_AVRE.png",
                 "colourClass": "all",
                 "infoUrl": "https://www.auscope.org.au/avre",
-                "infoMessage": "AVRE's Web Based Interface for searching and accessing a vast treasure trove of data."
+                "infoMessage": "AVRE's web-based interface for searching and accessing a vast treasure trove of data."
             },
             "geochem": {
                 "name": "Geochemistry",
@@ -85,7 +85,7 @@
                         "colourClass": "all",
                         "srcUrl" : "http://geomodels.auscope.org.au/",
                         "infoUrl": "",
-                        "infoMessage": "This website enables you to explore a wide range of geoscience models from all around Australia in 3D. The models are supported by links to other informative sources, namely AuScope Portal, geoscience Australia, and the state and territory geoscience surveys' websites."
+                        "infoMessage": "This website enables you to explore a wide range of geoscience models from all around Australia in 3D. The models are supported by links to other informative sources, namely AuScope Portal, Geoscience Australia, and the state and territory geoscience surveys' websites."
                     }
                 ],
                 "icon": "Icons_AVRE.png",
@@ -126,23 +126,6 @@
                 "colourClass": "all",
                 "infoUrl": "http://www.iearth.edu.au/",
                 "infoMessage": "iEarth is a collaborative group comprising scientists from academia, government, and industry"
-            },
-            "vgl": {
-                "name": "Virtual Geophysics Laboratory",
-                "models": [
-                    {
-                        "name": "Virtual Geophysics Lab",
-                        "icon": "VGL2.jpg",
-                        "colourClass": "all",
-                        "srcUrl" : "https://vgl.auscope.org/",
-                        "infoUrl": "https://www.auscope.org.au/avre",
-                        "infoMessage": "The Virtual Geophysics Laboratory (VGL) is a scientific workflow portal that provides Geophysicists with access to an integrated environment that exploits eResearch tools and Cloud computing technology."
-                    }
-                ],
-                "icon": "VGL2.jpg",
-                "colourClass": "all",
-                "infoUrl": "https://www.auscope.org.au/avre",
-                "infoMessage": "VGL is a portal for geophysicists to access integrated eResearch tools and Cloud computing."
             },
             "mate": {
                 "name": "Model Atlas of the Earth",
