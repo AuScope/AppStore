@@ -85,6 +85,41 @@ export class ModelInfoService {
     }
 
     /**
+     * Builds an HTTP GET URL using parameters
+     * @param params parameters Javascript object with key-val pairs
+     * @return URL string
+     */
+    public buildURL(params): string {
+        return Object.keys(params).map(k => encodeURIComponent(k) + '=' + encodeURIComponent(params[k])).join('&');
+    }
+
+    /**
+     * Retrieves the provider model information from the model information
+     * @return a promise of the provider model information in JSON format
+     */
+    public async getProviderModelInfo() {
+        const local = this;
+        if (this.initialised) {
+            return Promise.resolve(local.providerModelInfo);
+        }
+        const result = await this.initialise();
+        return Promise.resolve(result[0]);
+    }
+
+    /**
+     * Retrieves the provider information from the model information
+     * @return a promise of the provider information in JSON format
+     */
+    public async getProviderInfo() {
+        const local = this;
+        if (this.initialised) {
+            return Promise.resolve(local.providerInfoList);
+        }
+        const result = await this.initialise();
+        return Promise.resolve(result[1]);
+    }
+
+    /**
      * Initialise service
      */
     private initialise() {
@@ -123,39 +158,6 @@ export class ModelInfoService {
         return this.initPromise;
     }
 
-    /**
-     * Builds an HTTP GET URL using parameters
-     * @param params parameters Javascript object with key-val pairs
-     * @return URL string
-     */
-    public buildURL(params): string {
-        return Object.keys(params).map(k => encodeURIComponent(k) + '=' + encodeURIComponent(params[k])).join('&');
-    }
 
-    /**
-     * Retrieves the provider model information from the model information
-     * @return a promise of the provider model information in JSON format
-     */
-    public async getProviderModelInfo() {
-        const local = this;
-        if (this.initialised) {
-            return Promise.resolve(local.providerModelInfo);
-        }
-        const result = await this.initialise();
-        return Promise.resolve(result[0]);
-    }
-
-    /**
-     * Retrieves the provider information from the model information
-     * @return a promise of the provider information in JSON format
-     */
-    public async getProviderInfo() {
-        const local = this;
-        if (this.initialised) {
-            return Promise.resolve(local.providerInfoList);
-        }
-        const result = await this.initialise();
-        return Promise.resolve(result[1]);
-    }
 
 }
