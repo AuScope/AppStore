@@ -1,9 +1,9 @@
-@import "../../globals";
+@use "../../globals";
 
 :host {
     .navbar {
-        background-color: $topnav-background-color;
-        height: $header-height;
+        background-color: globals.$topnav-background-color;
+        height: globals.$header-height;
         .navbar-brand {
             color: #fff;
             margin-left: 0.7rem;
@@ -50,9 +50,9 @@
     border: none;
 }
 
-@media screen and (max-width: $small-screen-width) {
+@media screen and (max-width: globals.$small-screen-width) {
     .nav {
-        background-color: $topnav-background-color;
+        background-color: globals.$topnav-background-color;
         width: 100%;
     }
     .navbar-brand, .navbar-nav {

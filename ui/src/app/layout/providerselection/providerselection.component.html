@@ -1,27 +1,33 @@
 <div [@routerTransition]>
-    <div class="container-fluid">
-            <ngb-carousel>
-                <ng-template ngbSlide *ngFor="let slider of sliders">
-                    <div>
-                        <a href="{{slider.url}}" target="_blank">
-                            <img [src]="slider.imagePath" alt="Application: {{slider.text}}"/>
-                        </a>
-                    </div>
-                    <div class="carousel-caption">
-                        <h3>{{slider.label}}</h3>
-                        <p>{{slider.text}}</p>
-                    </div>
-                </ng-template>
-            </ngb-carousel>
-    </div>
-    <hr>
-    <div class="container-fluid">
-      <div *ngIf="sources" class="row">
-          <div *ngFor="let source of sources" class="col-xl-3 col-lg-6 card-border">
-              <app-provider-card [pInfoMessage]="source.infoMessage" [infoLink]="source.infoUrl" [bgClass]="source.colourClass" [icon]="source.icon" [count]="source.numberModels" [label]="source.name" [providerPath]="source.providerPath"
-              [srcUrl]="source.models?.length === 1 ? source.models[0].srcUrl : ''">
-            </app-provider-card>
+  <div class="container-fluid">
+    <ngb-carousel>
+      @for (slider of sliders; track slider) {
+        <ng-template ngbSlide>
+          <div>
+            <a href="{{slider.url}}" target="_blank">
+              <img [src]="slider.imagePath" alt="Application: {{slider.text}}"/>
+            </a>
           </div>
-      </div>
+          <div class="carousel-caption">
+            <h3>{{slider.label}}</h3>
+            <p>{{slider.text}}</p>
+          </div>
+        </ng-template>
+      }
+    </ngb-carousel>
+  </div>
+  <hr>
+    <div class="container-fluid">
+      @if (sources) {
+        <div class="row">
+          @for (source of sources; track source) {
+            <div class="col-xl-3 col-lg-6 card-border">
+              <app-provider-card [pInfoMessage]="source.infoMessage" [infoLink]="source.infoUrl" [bgClass]="source.colourClass" [icon]="source.icon" [count]="source.numberModels" [label]="source.name" [providerPath]="source.providerPath"
+                [srcUrl]="source.models?.length === 1 ? source.models[0].srcUrl : ''">
+              </app-provider-card>
+            </div>
+          }
+        </div>
+      }
     </div>
-</div>
+  </div>

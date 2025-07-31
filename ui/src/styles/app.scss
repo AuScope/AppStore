@@ -1,10 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-@import "bootstrap/scss/bootstrap";
-@import "spinner";
-@import "utils";
-@import "rtl";
-@import "responsive";
-@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@use "bootstrap";
+@use "spinner";
+@use "utils";
+@use "rtl";
+@use "responsive";
+@use '@angular/material/prebuilt-themes/deeppurple-amber.css';
 
 html {
    background-color: rgb(242, 242, 241);
