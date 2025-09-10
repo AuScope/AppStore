@@ -37,12 +37,12 @@
                 "name": "Geochemistry",
                 "models": [
                     {
-                        "name": "AusGeoChem",
-                        "icon": "AusGeoChem.png",
+                        "name": "EarthBank",
+                        "icon": "EarthBank.png",
                         "colourClass": "all",
                         "srcUrl" : "https://ausgeochem.auscope.org.au/",
                         "infoUrl": "",
-                        "infoMessage": "AusGeoChem provides the geochemistry community with a bespoke tool to explore, upload, disseminate and extract geo-sample and geochemistry data in a global geospatial context"
+                        "infoMessage": "EarthBank provides the geochemistry community with a bespoke tool to explore, upload, disseminate and extract geo-sample and geochemistry data in a global geospatial context"
 
                     }
                 ],
