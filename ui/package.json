@@ -7,7 +7,7 @@
   },
   "scripts": {
     "ng": "ng",
-    "start": "node --max_old_space_size=8000 ./node_modules/@angular/cli/bin/ng serve --proxy-config proxy.conf.json  --host 0.0.0.0 --disable-host-check --verbose",
+    "start": "node --max_old_space_size=8000 ./node_modules/@angular/cli/bin/ng serve --proxy-config proxy.conf.json  --host 0.0.0.0 --verbose",
     "build": "node --max_old_space_size=8000 ./node_modules/@angular/cli/bin/ng build --verbose --configuration production",
     "gitbuild": "ng build --max-old-space-size=8192 --configuration production --base /AuScope/AppStore/master/dist/",
     "test": "ng test",
