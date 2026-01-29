@@ -19,13 +19,11 @@
   <hr>
     <div class="container-fluid">
       @if (sources) {
-        <div class="row">
+        <div class="providers-grid">
           @for (source of sources; track source) {
-            <div class="col-xl-3 col-lg-6 card-border">
-              <app-provider-card [pInfoMessage]="source.infoMessage" [infoLink]="source.infoUrl" [bgClass]="source.colourClass" [icon]="source.icon" [count]="source.numberModels" [label]="source.name" [providerPath]="source.providerPath"
+            <app-provider-card [pInfoMessage]="source.infoMessage" [infoLink]="source.infoUrl" [bgClass]="source.colourClass" [icon]="source.icon" [count]="source.numberModels" [label]="source.name" [providerPath]="source.providerPath"
                 [srcUrl]="source.models?.length === 1 ? source.models[0].srcUrl : ''">
-              </app-provider-card>
-            </div>
+            </app-provider-card>
           }
         </div>
       }

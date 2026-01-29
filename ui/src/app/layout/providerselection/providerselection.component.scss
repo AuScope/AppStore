@@ -75,6 +75,13 @@ ngb-carousel div h3, p {
     font-weight: 900;
 }
 
+.providers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+    align-items: stretch;
+}
+
 ::ng-deep {
     .carousel-control-prev-icon {
         background-image: url('/assets/images/left-arrow.svg');
@@ -92,7 +99,6 @@ hr {
 h2 {
     margin-bottom: 0rem;
 }
-
 
 .title-text {
     color: #282572;
