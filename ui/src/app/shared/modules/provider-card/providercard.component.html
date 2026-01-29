@@ -1,20 +1,25 @@
-
-<div class="row provider-info-row">
-  <div class="col col-sm-3">
-    <img class="icon-img" src="assets/images/{{icon}}" alt="provider-icon"/>
+<div class="d-flex flex-column h-100">
+  <div class="row provider-info-row flex-grow-1">
+    <div class="col col-sm-3">
+      <img class="icon-img" src="assets/images/{{icon}}" alt="provider-icon"/>
+    </div>
+    <div class="col col-sm-9 ps-3">
+      <div class="d-block info-title">{{ label }}</div>
+      <div class="d-block info-txt">{{ pInfoMessage }}</div>
+    </div>
   </div>
-  <div class="col col-sm-9">
-    <div class="d-block info-title">{{label}}</div>
-    <div class="d-block info-txt">{{pInfoMessage}}</div>
-  </div>
-</div>
-<div class="row provider-selection-row">
-  <button type="button" class="btn btn-avre btn-provider-light bg-{{bgClass}}" (click)="navigateToProvider(count)">
-    Find Out More
-  </button>
-  @if (srcUrl !== '') {
-    <button type="button" class="btn btn-avre btn-model-light bg-{{bgClass}}" (click)="navigateToModel()">
-      Launch
+  <div class="row provider-selection-row mt-auto d-flex justify-content-center">
+    @if (srcUrl !== '') {
+      <button type="button"
+              class="btn btn-avre btn-model-light bg-{{bgClass }} mb-0"
+              (click)="navigateToModel()">
+        Launch
+      </button>
+    }
+    <button type="button"
+            class="btn btn-avre btn-provider-light bg-{{ bgClass }}"
+            (click)="navigateToProvider(count)">
+      Find Out More
     </button>
-  }
+  </div>
 </div>

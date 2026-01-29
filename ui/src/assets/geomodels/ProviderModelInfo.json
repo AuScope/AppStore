@@ -9,6 +9,22 @@
                         "srcUrl" : "https://github.com/underworldcode/underworld2",
                         "infoUrl": "https://www.underworldcode.org",
                         "infoMessage": "Underworld 2 is a python-friendly version of the Underworld code which provides a programmable and flexible front end to all the functionality of the code running in a parallel HPC environment."
+                    },
+                    {
+                        "name": "GPlates Portal",
+                        "icon": "gplates_portal.png",
+                        "colourClass": "all",
+                        "srcUrl" : "https://portal.gplates.org/#apps-anchor",
+                        "infoUrl": "https://portal.gplates.org/portal/welcome/",
+                        "infoMessage": "The GPlates Portal is a web-based platform that provides interactive 3D visualizations of models over geological time, such as plate tectonics and dynamic topography. Other capabilities include the display of global geoscience datasets such as seafloor lithology and gravity anomalies. It allows the user to explore the models and datasets without the need to install software, all within a web browser."
+                    },
+                    {
+                        "name": "GPlates",
+                        "icon": "gplates.png",
+                        "colourClass": "all",
+                        "srcUrl" : "https://www.gplates.org/",
+                        "infoUrl": "https://www.gplates.org/features/",
+                        "infoMessage": "GPlates is a plate tectonics program. Manipulate reconstructions of geological and paleogeographic features through geological time. Interactively visualize vector, raster and volume data. PyGPlates is the GPlates Python library. Get fine-grained access to GPlates functionality in your Python scripts."
                     }
                 ],
                 "icon": "Icons_SAM.png",

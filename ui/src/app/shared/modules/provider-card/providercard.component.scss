@@ -1,33 +1,38 @@
-.btn-provider-light {
-    border-color: #ed5d4a;
-    color: #ed5d4a;
-}
-
-.btn-provider-light:hover {
-    background-color: #ed5d4a;
-    color: rgb(242, 242, 241);
-}
-
-.btn-model-light {
-    border-color:   #598f39;
-    color:   #598f39;
-}
-
-.btn-model-light:hover {
-    background-color:   #598f39;
-    color: rgb(242, 242, 241);
-}
-
-.icon-img {
-    max-width: 60px; max-height: 60px;
-}
-
-.provider-info-row {
-    min-height: 100px;
+:host {
     display: flex;
-    width: 100%;
-}
+    flex-direction: column;
 
-.provider-selection-row {
-    display: contents;
+    .btn-provider-light {
+        border-color: #ed5d4a;
+        color: #ed5d4a;
+    }
+
+    .btn-provider-light:hover {
+        background-color: #ed5d4a;
+        color: rgb(242, 242, 241);
+    }
+
+    .btn-model-light {
+        border-color:   #598f39;
+        color:   #598f39;
+    }
+
+    .btn-model-light:hover {
+        background-color:   #598f39;
+        color: rgb(242, 242, 241);
+    }
+
+    .icon-img {
+        max-width: 60px; max-height: 60px;
+    }
+
+    .provider-info-row {
+        min-height: 100px;
+        display: flex;
+        width: 100%;
+    }
+
+    .provider-selection-row {
+        display: contents;
+    }
 }
