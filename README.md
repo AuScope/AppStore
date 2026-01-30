@@ -36,6 +36,6 @@ $ ng build --prod
 
 See [README](ui/src/assets/geomodels/README.md)
 
-### Building docker images
+### Development: building docker images
 
-There is a Dockerfile [here](ui/docker/Dockerfile)
+There is a Dockerfile [here](ui/docker/Dockerfile) and a simple build script [here](ui/docker/build.sh)
