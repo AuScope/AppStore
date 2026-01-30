@@ -1,10 +1,13 @@
 Provider and Model Display
 ==========================
 
+**IMPORTANT NOTE: In this context 'models' are the software applications, websites, libraries etc. and 'providers' are the organisations or projects that create and maintain them.**
+
 Provider Model Information File
 -------------------------------
 
-This file (_ui/src/assets/geomodels/ProviderModelInfo.json_) is used by the website to define providers and models. Models are grouped by provider.
+* This file (_ui/src/assets/geomodels/ProviderModelInfo.json_) is used by the website to define providers and models.
+* Models are grouped by provider.
 
 For each provider:
 
