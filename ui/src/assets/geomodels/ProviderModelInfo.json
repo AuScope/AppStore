@@ -85,6 +85,14 @@
                         "srcUrl" : "http://sensi.geoanalytics.group/",
                         "infoUrl": "",
                         "infoMessage": "Seismic Network Design App for optimising seismic array design that is based on the analytical method called SENSI that has been developed by Tramelli et al. (2013), which is widely used around the world including the GipNet array deployed to monitor seismicity in the Gippsland region in Victoria, Australia."
+                    },
+                    {
+                        "name": "AuSIS Map",
+                        "icon": "ausis_map.png",
+                        "colourClass": "all",
+                        "srcUrl" : "https://auscope.github.io/AuScope_Outreach/AuSIS_Map.html",
+                        "infoUrl": "https://www.auscope.org.au/ausis",
+                        "infoMessage": "The Australian Seismometers in Schools program provides both education outreach and quality data for monitoring and research. Explore the affect of earthquakes on AuScope's network of school-based seismometers. Click on a school to see plots of seismic waveforms. Explore worldwide earthquake events and their distances and travel time to Australia. Earthquake event data courtesy of Geoscience Australia."
                     }
                 ],
                 "icon": "Icons_Earth Imaging.png",
@@ -176,5 +184,22 @@
                 "colourClass": "all",
                 "infoUrl": "https://mate.science/news/",
                 "infoMessage": "M@TE is an open-source collection of computational models with a focus on tectonics, hydrogeology and surface processes."
+            },
+            "NVCL": {
+                "name": "National Virtual Core Library (NVCL)",
+                "models": [
+                    {
+                        "name": "NVCL Map",
+                        "icon": "nvcl_map.png",
+                        "colourClass": "all",
+                        "srcUrl" : "https://auscope.github.io/AuScope_Outreach/NVCL_Map.html",
+                        "infoUrl": "",
+                        "infoMessage": "The National Virtual Core Library (NVCL) is a web-based platform that provides access to a wide range of geological core samples and related data from across Australia. It allows users to explore and analyze core samples, view high-resolution images, and access associated metadata."
+                    }
+                ],
+                "icon": "NVCL-Logo.png",
+                "colourClass": "all",
+                "infoUrl": "https://www.auscope.org.au/nvcl/",
+                "infoMessage": "Explore the rollout of the world's largest online drill core mineralogical database, freely accessible to users anywhere in the world."
             }
 }
