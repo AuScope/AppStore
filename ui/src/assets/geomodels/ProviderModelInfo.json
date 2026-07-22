@@ -194,12 +194,13 @@
                         "colourClass": "all",
                         "srcUrl" : "https://auscope.github.io/AuScope_Outreach/NVCL_Map.html",
                         "infoUrl": "",
-                        "infoMessage": "The National Virtual Core Library (NVCL) is a web-based platform that provides access to a wide range of geological core samples and related data from across Australia. It allows users to explore and analyze core samples, view high-resolution images, and access associated metadata."
+                        "infoMessage": "Explore the rollout of the world's largest online drill core mineralogical database, freely accessible to users anywhere in the world."
                     }
                 ],
                 "icon": "NVCL-Logo.png",
                 "colourClass": "all",
                 "infoUrl": "https://www.auscope.org.au/nvcl/",
-                "infoMessage": "Explore the rollout of the world's largest online drill core mineralogical database, freely accessible to users anywhere in the world."
+                "infoMessage": "The National Virtual Core Library (NVCL) is a web-based platform that provides access to a wide range of geological core samples and related data from across Australia. It allows users to explore and analyze core samples, view high-resolution images, and access associated metadata."
+                        
             }
 }
