@@ -91,8 +91,8 @@
                         "icon": "ausis_map.png",
                         "colourClass": "all",
                         "srcUrl" : "https://auscope.github.io/AuScope_Outreach/AuSIS_Map.html",
-                        "infoUrl": "https://auspass.edu.au/",
-                        "infoMessage": " Australian Seismometers in Schools is a dual purpose seismic network. The program offers both education outreach and provides quality data for monitoring and research."
+                        "infoUrl": "https://www.auscope.org.au/ausis",
+                        "infoMessage": "The Australian Seismometers in Schools program provides both education outreach and quality data for monitoring and research. Explore the affect of earthquakes on AuScope's network of school-based seismometers. Click on a school to see plots of seismic waveforms. Explore worldwide earthquake events and their distances and travel time to Australia. Earthquake event data courtesy of Geoscience Australia."
                     }
                 ],
                 "icon": "Icons_Earth Imaging.png",
@@ -200,6 +200,6 @@
                 "icon": "NVCL-Logo.png",
                 "colourClass": "all",
                 "infoUrl": "https://www.auscope.org.au/nvcl/",
-                "infoMessage": "The world's largest online drill core mineralogical database, freely accessible to users anywhere in the world."
+                "infoMessage": "Explore the rollout of the world's largest online drill core mineralogical database, freely accessible to users anywhere in the world."
             }
 }
