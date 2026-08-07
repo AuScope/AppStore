@@ -48,7 +48,7 @@ export type ModelPartCallbackType =  (groupName: string, modelUrl: string, state
  */
 @Injectable()
 export class ModelInfoService {
-    private providerModelInfo = {};
+    private providerModelInfo: any = {};
     private providerInfoList: ProviderInfo[] = [];
 
     // Set to true once service has been initialised
@@ -60,7 +60,7 @@ export class ModelInfoService {
 
     // A callback used when some part of the model changes
     // Only one callback can be registered at a time
-    private modelPartCallback: ModelPartCallbackType;
+    private modelPartCallback!: ModelPartCallbackType;
 
     // Stores the current state of the model parts
     private modelPartState = {};
@@ -69,14 +69,14 @@ export class ModelInfoService {
     private modelControlEventSub = new Subject<ModelControlEvent>();
 
     // A promise to provider inform data and initialise
-    private initPromise: Promise<any> = null;
+    private initPromise: Promise<any> | null = null;
 
     // A promise to fetch model data
-    private modelPromise: Promise<any> = null;
+    private modelPromise: Promise<any> | null = null;
 
     // Used to fetch a list of borehole ids
     private boreholeIdList = [];
-    private bhPromise: Promise<any> = null;
+    private bhPromise: Promise<any> | null = null;
 
     // Used to inform of a camera position change
     private cameraPosSub = new Subject<[number, number, number, string]>();
@@ -89,7 +89,7 @@ export class ModelInfoService {
      * @param params parameters Javascript object with key-val pairs
      * @return URL string
      */
-    public buildURL(params): string {
+    public buildURL(params: any): string {
         return Object.keys(params).map(k => encodeURIComponent(k) + '=' + encodeURIComponent(params[k])).join('&');
     }
 

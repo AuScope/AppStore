@@ -8,9 +8,8 @@
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "experimentalDecorators": true,
-    "baseUrl": "./",
     "typeRoots": [
       "node_modules/@types"
     ]
