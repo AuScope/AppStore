@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { environment } from '../../../../environments/environment';
@@ -10,6 +10,7 @@ import { environment } from '../../../../environments/environment';
     selector: 'app-header',
     templateUrl: './header.component.html',
     styleUrls: ['./header.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class HeaderComponent {
@@ -22,7 +23,7 @@ export class HeaderComponent {
 
         this.translate.addLangs(['en', 'fr', 'ur', 'es', 'it', 'fa', 'de', 'zh-CHS']);
         this.translate.setDefaultLang('en');
-        const browserLang = this.translate.getBrowserLang();
+        const browserLang = this.translate.getBrowserLang() ?? 'en';
         this.translate.use(browserLang.match(/en|fr|ur|es|it|fa|de|zh-CHS/) ? browserLang : 'en');
 
         this.router.events.subscribe(val => {
@@ -46,7 +47,7 @@ export class HeaderComponent {
      * @returns true if header is displayed
      */
     isToggled(): boolean {
-        const dom: Element = document.querySelector('body');
+        const dom: Element = document.body;
         return dom.classList.contains(this.pushRightClass);
     }
 

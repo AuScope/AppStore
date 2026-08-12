@@ -4,7 +4,6 @@
     "target": "ES2022",
     "useDefineForClassFields": false,
     "outDir": "../out-tsc/app",
-    "baseUrl": "./",
     "types": []
   },
   "files": [
@@ -13,5 +12,14 @@
   ],
   "include": [
     "src/**/*.d.ts"
-  ]
+  ],
+  "angularCompilerOptions": {
+    "extendedDiagnostics": {
+      "checks": {
+        "nullishCoalescingNotNullable": "suppress",
+        "optionalChainNotNullable": "suppress"
+      }
+    },
+    "strictTemplates": true
+  }
 }

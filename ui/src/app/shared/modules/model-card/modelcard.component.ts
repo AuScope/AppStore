@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 import { environment } from '../../../../environments/environment';
 
 /**
@@ -8,12 +8,13 @@ import { environment } from '../../../../environments/environment';
     selector: 'app-model-card',
     templateUrl: './modelcard.component.html',
     styleUrls: ['./modelcard.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class ModelCardComponent {
-    @Input() bgClass: string;
-    @Input() icon: string;
-    @Input() label: string;
+    @Input() bgClass!: string;
+    @Input() icon!: string;
+    @Input() label!: string;
     @Input() prePath = '';
     @Input() modelInfoLink = '';
     @Input() modelSrcLink = '';

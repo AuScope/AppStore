@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { routerTransition } from '../../router.animations';
 import { ModelInfoService } from '../../shared/services/model-info.service';
 
@@ -7,6 +7,7 @@ import { ModelInfoService } from '../../shared/services/model-info.service';
     templateUrl: './providerselection.component.html',
     styleUrls: ['./providerselection.component.scss'],
     animations: [routerTransition()],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class ProviderSelectionComponent {
